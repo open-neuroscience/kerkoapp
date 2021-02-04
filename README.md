@@ -218,6 +218,10 @@ to your `.env` file if you wish to override their default values:
   search results pages. Defaults to `False` (hidden).
 * `KERKO_RESULTS_ABSTRACTS_TOGGLER`: Determines whether the user may toggle the
   display of abstracts on search results pages. Defaults to `True`.
+* `KERKO_RESULTS_ATTACHMENT_LINKS`: Provide links to attachments in search
+  results. Defaults to `True`.
+* `KERKO_RESULTS_URL_LINKS`: Provide links to online resources in search
+  results (for items whose URL field has a value). Defaults to `True`.
 * `KERKO_TITLE`: The title to display in web pages. Defaults to `'Kerko App'`.
 * `KERKO_ZOTERO_BATCH_SIZE`: Number of items to request on each call to the
   Zotero API. Defaults to `100` (which is the maximum currently allowed by the
