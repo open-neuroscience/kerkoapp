@@ -2,6 +2,15 @@
 
 ## Latest (unreleased)
 
+*Warning:* Upgrading from version 0.7.x or earlier will require that you clean
+and re-sync your existing search index. Use the following commands, then restart
+the application:
+
+```bash
+flask kerko clean index
+flask kerko sync
+```
+
 Changes:
 
 * Read the new `KERKO_FULLTEXT_SEARCH` configuration variable from the
