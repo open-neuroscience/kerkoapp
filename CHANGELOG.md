@@ -4,6 +4,10 @@
 
 Changes:
 
+* Read the new `KERKO_FULLTEXT_SEARCH` configuration variable from the
+  environment.
+* If full-text search is disabled, remove default scopes and fields that would
+  otherwise be irrelevant or redundant.
 * Add template for HTTP 503 (Service Unavailable) responses.
 * Fix missing info about library groupID in configuration docs. Thanks
   [@drmikeuk](https://github.com/drmikeuk) for reporting the issue.
