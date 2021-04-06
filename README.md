@@ -204,10 +204,12 @@ to your `.env` file if you wish to override their default values:
   limit).
 * `KERKO_FACET_COLLAPSING`: Allow collapsible facets. Defaults to `False`.
 * `KERKO_FULLTEXT_SEARCH`: Allow full-text search of attached documents.
-  Defaults to `True`. Caution: If you have a large number of attachments, having
-  this option enabled can significantly slow down the process of synchronizing
-  data from zotero.org, due to a large number of Zotero API requests. Kerko's
-  synchronization logic may get improved in the future.
+  Defaults to `True`. You really should set this to `False` if you don't intend
+  to attach any documents, otherwise the users may be offered irrelevant options
+  when selecting the scope of their search. Caution: If you have thousands of
+  attachments, enabling this option can significantly slow down the process of
+  synchronizing data from zotero.org, due to Kerko performing a large number of
+  Zotero API requests (hopefully this will be fixed in the future).
 * `KERKO_PAGE_LEN`: The number of search results per page. Defaults to `20`.
 * `KERKO_PAGER_LINKS`: Number of pages to show in the pager (not counting the
   current page). Defaults to `4`.
