@@ -13,8 +13,9 @@ flask kerko sync
 
 Changes:
 
-* Read the new `KERKO_FULLTEXT_SEARCH` configuration variable from the
-  environment.
+* Read new settings `KERKO_FULLTEXT_SEARCH`, `KERKO_RELATIONS_LINKS`,
+  `KERKO_RESULTS_ATTACHMENT_LINKS`, and `KERKO_RESULTS_URL_LINKS` from
+  environment variables.
 * If full-text search is disabled, remove default scopes and fields that would
   otherwise be irrelevant or redundant.
 * Add template for HTTP 503 (Service Unavailable) responses.
