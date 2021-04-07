@@ -51,7 +51,7 @@ jinja2==2.11.2
     #   flask
     #   flask-babel
     #   kerko
-git+https://github.com/whiskyechobravo/kerko.git@read-and-visit-links-6672#egg=kerko
+git+https://github.com/whiskyechobravo/kerko.git#egg=kerko
     # via -r requirements/run.in
 markupsafe==1.1.1
     # via
